@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>KOF-1998</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="css/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/variables.css">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- El navegador-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo-nav" src="img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="kof.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noventaycinco.html">KOF 1995</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noventaysiete.html">KOF 1997</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noventayocho.html">KOF 1998</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="col-sm-12 contacto-titulo-contenedor">
+        <h1 class="contacto_titulo">Para mas información envianos mensaje</h1>
+    </div>
+
+    <div class="inner contact">
+        <!-- Form Area -->
+        <div class="contact-form">
+            <!-- Form -->
+            <form id="contact-us" method="post" action="#">
+                <!-- Inputs -->
+                <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                    <!-- Nombre -->
+                    <input type="text" name="nombre" id="nombre" required="required" class="form" placeholder="nombre" />
+                    <!-- Email -->
+                    <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+                    <!-- Motivo -->
+                    <input type="text" name="motivo" id="motivo" required="required" class="form" placeholder="motivo" />
+                </div><!-- Inputs de la izquierda Inputs -->
+                <!-- Inputs de la derecha -->
+                <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                    <!-- mensaje -->
+                    <textarea name="mensaje" id="mensaje" class="form textarea"  placeholder="mensaje"></textarea>
+                </div><!-- Terminan Inputs de la derecha -->
+                <!-- Boton Submit -->
+                <div class="relative fullwidth col-xs-12">
+                    <!-- Boton  enviar-->
+                    <button type="submit" id="submit" name="submit" class="form-btn semibold">Enviar mensaje</button> 
+                </div><!-- Termina boton Submit -->
+                <!-- Clear -->
+                <div class="clear"></div>
+            </form>
+
+            <!-- Your Mail Message -->
+            <div class="mail-message-area">
+                <!-- Message -->
+                <div class="alert gray-bg mail-message not-visible-message">
+                    <strong>Gracias!</strong> Tu mensaje ha sido enviado.
+                </div>
+            </div>
+
+        </div><!-- End Contact Form Area -->
+    </div><!-- End Inner -->
+
+</body>
+
+</html>

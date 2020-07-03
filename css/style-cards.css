@@ -1,0 +1,59 @@
+.titulo-equipo{
+    padding-top: 2rem;
+}
+
+.kof-card .Avatar{
+    width: 120px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.kof-card .card-color {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.contenedor-personajes{
+    height: 400px;
+    width: 100%;
+    overflow:scroll;
+}
+
+.kof-gradient-fuego{
+    background: linear-gradient(40deg,#ff0000,#f1b863) !important;
+}
+
+.kof-card .Avatar img {
+    width: 100%;
+}
+
+.kof-gradient-electricidad{
+    background: linear-gradient(40deg,#1d19ff,#879dff) !important;
+}
+
+.kof-gradient-lucha{
+    background: linear-gradient(40deg,#f3f3ff,#999aa1) !important;
+}
+
+.kof-gradient-purpura{
+    background: linear-gradient(40deg,#5a0056,#a252bb) !important;
+}
+
+.kof-gradient-mistico{
+    background: linear-gradient(40deg,#00869e,#49c0f7) !important;
+}
+
+.kof-gradient-green{
+    background: linear-gradient(40deg,#2de000,#19fc5d) !important;
+}

@@ -1,0 +1,10 @@
+$posicion:center;
+$tituloColor:green;
+
+.contacto_titulo{
+    color:$tituloColor;
+}
+
+.contacto-titulo-contenedor {
+    text-align: $posicion;
+}
