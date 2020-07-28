@@ -1,0 +1,37 @@
+<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>JS_shield</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(7 220)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M -7 -220L 41 -220L 41 -172L -7 -172L -7 -220Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="JS_shield" clip-path="url(#clip-0)">
+<g id="Group + Group">
+<g id="Group">
+<g id="Fill 1">
+<use xlink:href="#path0_fill" transform="translate(-5.90022 -219.751)" fill="#F2F7F8"/>
+</g>
+<g id="Fill 3">
+<use xlink:href="#path1_fill" transform="translate(-5.90022 -219.751)" fill="url(#paint1_linear)"/>
+</g>
+</g>
+<g id="Combined Shape">
+<use xlink:href="#path2_fill" transform="translate(6.16786 -207.278)" fill="url(#paint2_linear)"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint1_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 47.5326 -45.9002 0 22.9501 0)">
+<stop offset="0" stop-color="#FFA60B"/>
+<stop offset="1" stop-color="#F2BA3A"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 20.3127 -21.3205 0 10.6602 0)">
+<stop offset="0" stop-color="#FFA60B"/>
+<stop offset="1" stop-color="#F2BA3A"/>
+</linearGradient>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 11.2446C 0 38.4189 22.5672 47.3799 22.9473 47.5298C 23.3337 47.3799 45.9002 38.4189 45.9002 11.2446L 22.9526 0.00280292L 0 11.2446Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 22.9526 0.00280292L 22.9526 0L 22.9473 0L 22.9473 0.00280292L 0 11.2446C 0 38.4189 22.5672 47.3799 22.9473 47.5298L 22.9473 47.5326L 22.9501 47.5312L 22.9526 47.5326L 22.9526 47.5298C 23.3337 47.3799 45.9002 38.4189 45.9002 11.2446L 22.9526 0.00280292ZM 22.9027 44.7495L 22.9027 44.7509L 22.8974 44.7509L 22.8974 44.7495C 22.5662 44.6165 2.90022 36.6969 2.90022 12.6874L 22.8974 2.75268L 22.8974 2.75089L 22.9002 2.75232L 22.9027 2.75089L 22.9027 2.75268L 42.9002 12.6874C 42.9002 36.6969 23.2339 44.6165 22.9027 44.7495Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 8.61681 16.0214L 8.61681 0L 5.74475 0L 5.74475 16.0214C 5.74475 16.9751 5.26579 17.452 4.30851 17.452C 3.35102 17.452 2.87248 16.9751 2.87248 16.0214L 2.87248 15.3061L 0 15.3061L 0 16.0214C 0 18.8821 1.43624 20.3127 4.30851 20.3127C 7.18099 20.3127 8.61681 18.8821 8.61681 16.0214ZM 15.5759 15.0199L 12.7039 15.0199L 12.7039 15.7352C 12.7039 18.5957 14.1399 20.0264 17.0122 20.0264C 19.8844 20.0264 21.3205 18.5957 21.3205 15.7352L 21.3205 14.5908C 21.3205 12.4932 20.3634 10.7762 18.4482 9.44106C 16.5338 8.10611 15.5759 6.77095 15.5759 5.43581L 15.5759 4.29128C 15.5759 3.33777 16.0549 2.86092 17.0122 2.86092C 17.9697 2.86092 18.4482 3.33777 18.4482 4.29147L 18.4482 5.00656L 21.3205 5.00656L 21.3205 4.29147C 21.3205 1.43077 19.8844 0 17.0122 0C 14.1399 0 12.7039 1.43036 12.7039 4.29128L 12.7039 5.43581C 12.7039 7.53384 13.6614 9.25023 15.5759 10.5852C 17.4909 11.9207 18.4482 13.2557 18.4482 14.5908L 18.4482 15.7352C 18.4482 16.6886 17.9697 17.1655 17.0122 17.1655C 16.0549 17.1655 15.5759 16.6886 15.5759 15.7352L 15.5759 15.0199Z"/>
+</defs>
+</svg>
