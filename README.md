@@ -1,5 +1,5 @@
-# Personal Victor's web site
+# Victor's ṕersonal web site
 
-## 
+### Implemented with:
 
-Personal web site implemented basically with Javascript, HTML5 and CSS3
+Javascript, HTML5 and CSS3
