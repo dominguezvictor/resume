@@ -1,4 +1,4 @@
-# Victor's ṕersonal web site
+# Victor's personal web site
 
 ### Implemented with:
 
