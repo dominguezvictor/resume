@@ -1,2 +1,5 @@
-# resume
-Proyecto de página web, es una simple página en la que pretendo crear mi curriculum vitae
+# Victor's personal web site
+
+### Implemented with:
+
+Javascript, HTML5 and CSS3
