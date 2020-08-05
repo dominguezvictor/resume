@@ -15,7 +15,7 @@ html, body{
 .contenedor-lateral{
     background-color: #fff;
     width: 25%;
-    height: 200px;
+    /*height: 225px;*/
     margin-left: 15px;
 }
 
@@ -25,8 +25,21 @@ html, body{
     align-items: center;     
 }
 
-.nombre-user p {
-    font-size: large;
+.nombre-user{
+    text-align: center;
+}
+
+.carrera-user{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    color: #666;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+
+.align-center{
+    text-align: center;
 }
 
 #contenedor-img-perfil{
@@ -35,7 +48,7 @@ html, body{
 }
 
 #img-perfil{
-    width: 120px;    
+    width: 180px;    
     overflow: hidden;
     border: 5px solid rgba(0,123,255,.25);
     border-radius: 50%;
@@ -47,8 +60,16 @@ html, body{
     width: 70%;
 }
 
+.font-size-15{
+    font-size: 15px;    
+}
+
 .font-size-20{
     font-size: 20px;    
+}
+
+.font-weigth-700{
+    font-weight: 700;
 }
 
 .gothic-black{
@@ -57,19 +78,19 @@ html, body{
     color: #000;
 }
 
-#contenedor-titulo{
+.contenedor-titulo{
     padding: 5px;
     border-bottom: 1px solid #dee2e6;
     margin-left: 15px;
     margin-right: 15px;
 }
 
-#contenedor-titulo > p {
+.contenedor-titulo > p {
     margin-top:10px;
     font-weight: 700;
 }
 
-.contenedor-habilidades{
+.contenedor-habilidades, .contenedor-frameworks{
     padding: 15px;
     display:flex;    
     flex-direction: row;
@@ -78,11 +99,11 @@ html, body{
     align-items: flex-start;
 }
 
-.habilidad-lenguajes{
+.habilidad-lenguajes, .habilidad-frameworks{
     flex:auto;
 }
 
-.forma-div-lenguaje{    
+.forma-div-lenguaje, .forma-div-framework {    
     border-radius: 15px;
     width: 75%;
     text-align: center;
@@ -90,13 +111,35 @@ html, body{
     padding: 1px;
 }
 
-.forma-div-lenguaje > p {
+.forma-div-lenguaje > p, .forma-div-framework > p {
     margin-top: 6px;
     margin-bottom: 5px;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
 }
 
-.forma-div-lenguaje img {
+.forma-div-lenguaje img, .forma-div-framework img{
     height: 25px;
 }
+
+/*Inician  los media querys*/
+@media screen and (max-width: 600px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .contenedor-lateral{
+        margin-bottom: 10px;
+    }
+
+    .contenedor-lateral, #contenedor-content{        
+        width: 100%;        
+    }
+    
+    .habilidad-lenguajes, .habilidad-frameworks{
+        flex:initial;
+    }
+    
+  }
