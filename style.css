@@ -123,7 +123,15 @@ html, body{
 }
 
 /*Inician  los media querys*/
-@media screen and (max-width: 600px) {
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+    html, body{    
+        width: 100%;
+        margin:0px;
+    }
+
     .contenedor{
         display: flex;
         flex-direction: column;
@@ -132,14 +140,21 @@ html, body{
 
     .contenedor-lateral{
         margin-bottom: 10px;
+        margin-left:0px;
     }
+
+    #contenedor-content{
+        margin-bottom: 10px;
+        margin-left:0px;
+    }
+
 
     .contenedor-lateral, #contenedor-content{        
         width: 100%;        
     }
     
     .habilidad-lenguajes, .habilidad-frameworks{
-        flex:initial;
+        flex:auto;
     }
     
   }
