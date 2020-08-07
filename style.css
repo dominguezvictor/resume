@@ -115,14 +115,14 @@ html, body{
 
 .forma-div-lenguaje, .forma-div-framework {    
     border-radius: 15px;
-    width: 75%;
+    width: 80%;
     text-align: center;
     background-color: #f7f7f7;
-    padding: 1px;
+    padding: 5px 0px 0px 10px;
+    display:flex;
 }
 
-.forma-div-lenguaje > p, .forma-div-framework > p {
-    margin-top: 6px;
+.forma-div-lenguaje > p, .forma-div-framework > p {    
     margin-bottom: 5px;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
@@ -175,11 +175,11 @@ and (max-device-width : 600px) {
     }
 
     .nombre-user h1{
-        font-size:50px
+        font-size:55px
     }
     
     .carrera-user{
-        font-size: 40px;
+        font-size: 45px;
     }
 
     #user-pefil-div{
@@ -187,6 +187,23 @@ and (max-device-width : 600px) {
     }
     
     #user-perfil{
-        font-size: 35px;        
+        font-size: 40px;        
     }
+
+    .contenedor-titulo > p {                
+        font-size: 35px;
+    }
+
+    .forma-div-lenguaje, .forma-div-framework {        
+        display: table;
+    }
+
+    .forma-div-lenguaje img, .forma-div-framework img {
+        height: 60px;
+    }
+
+    .forma-div-lenguaje > p, .forma-div-framework > p {
+        font-size:25px;
+    }
+
   }
