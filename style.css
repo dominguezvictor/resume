@@ -199,10 +199,28 @@ and (max-device-width : 600px) {
     }
 
     #img-perfil{
-        width: 250px;    
-        overflow: hidden;
-        border: 5px solid rgba(0,123,255,.25);
-        border-radius: 50%;
+        width: 300px;                    
+    }
+    
+    #contenedor-img-perfil{    
+      
+        max-width: 320px;
+        padding:10px;
+      
+      
+      
+      
+      }
+    
+    
+    #contenedor-img-perfil:hover{    
+      
+      max-width: 250px;
+      padding:10px;
+      
+      
+      
+      
     }
 
     .nombre-user h1{
