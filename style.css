@@ -202,25 +202,15 @@ and (max-device-width : 600px) {
         width: 300px;                    
     }
     
-    #contenedor-img-perfil{    
-      
+    #contenedor-img-perfil{          
         max-width: 320px;
-        padding:10px;
-      
-      
-      
-      
+        padding:10px;                      
       }
     
     
-    #contenedor-img-perfil:hover{    
-      
-      max-width: 250px;
-      padding:10px;
-      
-      
-      
-      
+    #contenedor-img-perfil:hover{          
+      max-width: 320px;
+      padding:10px;                        
     }
 
     .nombre-user h1{
