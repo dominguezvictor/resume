@@ -3,7 +3,7 @@ html, body{
     width: 100%;
     font-family: 'Poppins', sans-serif;
     background: rgb(252, 231, 231);
-    margin:10px;
+    margin:0px;    
 }
 
 .contenedor{
@@ -14,8 +14,7 @@ html, body{
 
 .contenedor-lateral{
     background-color: #fff;
-    width: 25%;
-    /*height: 225px;*/
+    width: 25%;    
     margin-left: 15px;
 }
 
@@ -87,7 +86,7 @@ html, body{
 #contenedor-content{
     background-color: #fff;
     margin-left: 15px;    
-    width: 70%;
+    width: 71.5%;
 }
 
 .font-size-15{
@@ -120,7 +119,8 @@ html, body{
     font-weight: 700;
 }
 
-.contenedor-habilidades, .contenedor-frameworks{
+.contenedor-habilidades, .contenedor-frameworks,
+.contenedor-valores{
     padding: 15px;
     display:flex;    
     flex-direction: row;
@@ -129,7 +129,8 @@ html, body{
     align-items: flex-start;
 }
 
-.habilidad-lenguajes, .habilidad-frameworks{
+.habilidad-lenguajes, .habilidad-frameworks,
+.item-valores-contenedor{
     flex:auto;
 }
 
@@ -163,10 +164,100 @@ html, body{
     font-size: 14px;
 }
 
+
+.resume-footer{    
+    padding-top: 2em;
+    padding-bottom: 2em;    
+    font-size: 1em;
+    border-top: .8em solid #008ccf;        
+	width: 98.1%;
+    margin-left:12px;
+}
+
+.theme--dark {
+    background-color: #222;
+    color: #d8d8d8; 
+}
+
+/*Inician estilos de valores*/
+.item-valores {
+    font-size: 45px;
+    font-weight: 300;
+    color: #32c5d2;
+    margin: 10px auto 30px auto;
+    background-color: #fff;
+    width: 160px;
+    height: 160px;
+    padding: 65px 0;
+    display: block;
+    border-radius: 200px;
+    border: 2px solid transparent;
+}
+.div-img-valores-circle {
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+    position: relative;
+    z-index: 2;
+    background-color: #ffffff!important;
+    /*background: linear-gradient(0deg, rgba(34,193,195,1) 18%, rgba(45,253,121,1) 96%);*/
+    border: 1px solid #c8c8c8!important;
+    overflow: hidden;
+}
+
+.hr-item-valores {
+    width: 90%;
+    left: 40%;
+    visibility: visible;    
+    position: relative;
+    top: 100px;
+    z-index: 1;
+    border: .5px dashed #c8c8c8;
+}
+
+.hr-item-valores-hidden{
+    visibility: hidden;
+}
+
+.item-img-g{
+    text-align: center;
+    
+}
+.item-img-g>img{
+    width: 65%;    
+}
+
+.titulo-valor{
+    font-weight: 700;
+    font-size: 20px;    
+    margin: -15px 0 15px 0;
+    color: #616161 !important;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+div.circle-valores-1:hover{
+    background-color: #008ccf!important;
+}
+
+div.circle-valores-2:hover{
+    background-color: #9aff28!important;
+}
+
+div.circle-valores-3:hover{
+    background-color: #ff002b!important;
+}
+
+div.circle-valores-4:hover{
+    background-color: #e608c8!important;
+}
+/*Terminan estilos de valores*/
+
 /*Inician  los media querys*/
 @media only screen 
 and (min-device-width : 320px) 
-and (max-device-width : 600px) {
+and (max-device-width : 667px) {
 
     html, body{    
         width: 100%;
@@ -267,5 +358,25 @@ and (max-device-width : 600px) {
         font-size: 40px;
         margin-left: 30px;
     }    
+
+    .resume-footer{    
+        margin: 0;               
+        width: 100%;
+        
+    }
+
+    .item-valores {                        
+        margin: 10px auto 30px auto;        
+        width: 150px;
+        height: 150px;
+        padding: 65px 0;
+        display: block;
+        /*border-radius: 200px;*/
+        
+    }
+
+    .hr-item-valores{
+        visibility: hidden;
+    }
     
   }
