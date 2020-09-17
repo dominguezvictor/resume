@@ -1,0 +1,77 @@
+/*VIDG: Inician estilos del componente del grid de articulos*/
+.vdg-grid{
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;    
+}
+
+.vdg-grid .card{
+    width: 350px;
+    max-height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    transition: all 0.25s;    
+    display: flex;
+    align-items: center;
+    color:white;
+    background: #000000; 
+    background: -webkit-linear-gradient(to right, #000000, #434343);
+    background: linear-gradient(to right, #000000, #434343);
+    border:none;
+}
+
+.vdg-grid .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.vdg-grid .card img{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+.vdg-grid .card h4{
+    font-weight: 600;
+    padding: 0 1rem;
+}
+
+.vdg-grid .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+.vdg-grid .card a{
+    /*font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+    padding: 0 1rem;*/
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: #4479BA;
+    color: #FFF;
+    padding: 8px 12px;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+/*VIDG: Terminan estilos del componente del grid de articulos*/
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 667px) {
+.vdg-grid .card{
+    width: 100%;
+}
+}
