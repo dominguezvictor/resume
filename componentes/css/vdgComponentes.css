@@ -74,4 +74,28 @@ and (max-device-width : 667px) {
 .vdg-grid .card{
     width: 100%;
 }
+
+.vdg-Tarjeta h4{
+    font-size: 40px;
+}
+
+.vdg-grid .card p{
+    padding: 0 1rem;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.vdg-grid .card a {
+    padding: 13px 34px;    
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.vdg-grid .card{
+    
+    max-height: 510px;
+    
+}
+
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Victor Dom&iacute;nguez</title>
     <meta name="VictorDominguez" content="victordominguez">
@@ -11,6 +10,9 @@
     <link href="css/fontawesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link href="css/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
 
     <!-- VDG: Estilos propios de VickDesigns-->
     <link rel="stylesheet" href="style.css">
@@ -30,8 +32,47 @@
         <script src="app.js"></script>
         <script src="componentes/vdgComponentes.js"></script>
 </head>
-
 <body>
+    <header id="header-menu" class="menu-contenedor">
+        <!--Navbar -->
+        <nav class="vidg-menu navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="vidg-bold navbar-brand" href="#">VIDG</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#desplegaNavMobiles" 
+                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="desplegaNavMobiles">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a id="nav-1" class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a id="nav-2" class="nav-link" href="#PanelProyectos-contenedor">Proyectos</a>
+                </li>                                                     
+              </ul>
+
+              <div class="vidg-lenguaje-div btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-info active" data-toggle="tooltip" data-placement="top" title="Español">
+                  <input type="radio" name="options" data-lenguaje="spanish" id="spanish" checked><span>
+                      <img class="img-lenguaje" src="img/mexico.svg"></span>
+                </label>
+                <label class="btn btn-info" data-toggle="tooltip" data-placement="top" title="English">
+                  <input type="radio" name="options" data-lenguaje="english" id="english"><span>
+                      <img class="img-lenguaje" src="img/uk.svg"></span>
+                </label>                
+              </div>
+
+             <!-- <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="darkModeSwitch">
+                <label class="custom-control-label vidg-label-light" for="darkModeSwitch">Dark Mode</label>
+              </div>-->             
+
+            </div>
+          </nav>
+  <!--/.Navbar -->              
+    </header>
+
 
     <div class="contenedor">
         <div class="contenedor-lateral">
@@ -43,7 +84,7 @@
                     <h1 class="font-size-20 font-weigth-700 gothic-black">Victor Iván Domínguez García</h1>
                 </div>
                 <div class="carrera-user-div align-center">
-                    <p class="carrera-user">Lic. Sistemas computaciones administrativos</p>
+                    <p id="vidg-estudios" class="carrera-user">Lic. Sistemas computaciones administrativos</p>
                 </div>
                 <div id="user-pefil-div">
                     <p id="user-perfil">Programador apasionado de las
@@ -97,7 +138,7 @@
 
         <div id="contenedor-content">
             <div class="contenedor-titulo">
-                <p>Lenguages</p>
+                <p id="vidg-lbl-lenguajes">Lenguajes</p>
             </div>
 
             <div class="contenedor-habilidades">
@@ -140,7 +181,7 @@
             </div>
 
             <div class="contenedor-titulo">
-                <p>Librerías y frameworks</p>
+                <p id="vidg-librariesframeworks">Librerías y frameworks</p>
             </div>
 
             <div class="contenedor-frameworks">
@@ -192,7 +233,6 @@
                 <!-- Agrego un contenedor titulo para que agregue una lińea separadora-->
             </div>
 
-            
            <div class="contenedor-valores">
                 <div class="item-valores-contenedor">
                     <hr class="hr-item-valores">
@@ -201,7 +241,7 @@
                             <img class="img-valores" src="img/responsibility_gray.png" alt="Cerebro">
                         </div>
                     </div>
-                    <h4 class="titulo-valor">Responsabilidad</h4>
+                    <h4 id="vidg-valores-1" class="titulo-valor">Responsabilidad</h4>
                 </div>
                 <div class="item-valores-contenedor">
                     <hr class="hr-item-valores">
@@ -210,7 +250,7 @@
                             <img class="img-valores" src="img/team_gray.png" alt="Cerebro">
                         </div>
                     </div>
-                    <h4 class="titulo-valor">Trabajo en equipo</h4>
+                    <h4 id="vidg-valores-2" class="titulo-valor">Trabajo en equipo</h4>
                 </div>
                 <div class="item-valores-contenedor">
                     <hr class="hr-item-valores">
@@ -219,7 +259,7 @@
                             <img class="img-valores" src="img/idea_gray.png" alt="Cerebro">
                         </div>
                     </div>
-                    <h4 class="titulo-valor">Creatividad</h4>
+                    <h4 id="vidg-valores-3" class="titulo-valor">Creatividad</h4>
                 </div>
                 <div class="item-valores-contenedor">
                     <hr class="hr-item-valores-hidden">
@@ -228,21 +268,16 @@
                             <img class="img-valores" src="img/reinforcement_gray.png" alt="Cerebro">
                         </div>
                     </div>
-                    <h4 class="titulo-valor">Compromiso</h4>
+                    <h4 id="vidg-valores-4" class="titulo-valor">Compromiso</h4>
                 </div>
             </div>
-
-        
-
-        
-            
 
         </div>
     </div>
 
     <section id="PanelProyectos-contenedor">
         <div class="contenedor-titulo">
-            <h1 id="titulo-panelProyectos">Proyectos personales</h1>
+            <p id="titulo-panelProyectos">Proyectos personales</p>
         </div>
         
         <div id="PanelProyectos"></div>
@@ -251,7 +286,6 @@
     <footer class="resume-footer theme--dark ">        
         <p>Copyright &copy; 2020 VickDesigns</p>                
     </footer>
-
     
 </body>
 

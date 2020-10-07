@@ -8,8 +8,8 @@ html, body{
 
 .contenedor{
     display: flex;
-    flex-direction: row;
-
+    flex-direction: row;    
+    margin-top:75px;
 }
 
 .contenedor-lateral{
@@ -70,7 +70,7 @@ html, body{
     max-width: 250px;
     padding: 1rem;
     position: relative;
-    background: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));
+    /*background: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));*/
     padding: 3px;
   }
 
@@ -176,6 +176,7 @@ html, body{
     margin-left:12px;
     border-radius: 5px;    
     text-align: center;
+    height: 60px;
 }
 
 .theme--dark {
@@ -272,9 +273,34 @@ div.circle-valores-4:hover{
 }
 
 #titulo-panelProyectos{
-    text-align: center;    
-    font-family: 'Permanent Marker', cursive;
-    color: #a72a2a;
+    text-align: center;     
+    font-weight: 700;   
+    font-size: 25px;
+}
+
+/*menú*/
+.vidg-menu{
+    background:#222;
+    border-bottom: .4em solid #008ccf;           
+}
+
+/*Termina menú*/
+
+.vidg-bold{
+    font-weight: bold;
+}
+
+.vidg-label-light{
+    color:white;
+    font-weight: bold;
+}
+
+.vidg-lenguaje-div{
+    margin-right: 15px;
+}
+
+.img-lenguaje{
+    width: 20px;
 }
 
 /*Inician  los media querys*/
@@ -400,6 +426,10 @@ and (max-device-width : 667px) {
 
     .hr-item-valores{
         visibility: hidden;
+    }
+
+    .resume-footer p{
+        font-size: 40px;
     }
     
   }
