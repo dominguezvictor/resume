@@ -432,4 +432,27 @@ and (max-device-width : 667px) {
         font-size: 40px;
     }
     
+
+    .navbar-toggler-icon{
+        height: 2.7em;
+        width: 2.7em;
+    }
+
+    .navbar-brand {        
+        font-size: 2.25rem;        
+    }
+
+    .nav-link{
+        font-size: 1.5em;
+    }
+
+    .vidg-lenguaje-div{
+        width: 170px;
+    height: 60px;
+    }
+
+    .img-lenguaje{
+        width: 45px;
+    }
+
   }
