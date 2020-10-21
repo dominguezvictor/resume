@@ -316,6 +316,7 @@ and (max-device-width : 667px) {
     .contenedor{
         display: flex;
         flex-direction: column;
+        margin-top:100px;
     
     }
 
@@ -359,6 +360,7 @@ and (max-device-width : 667px) {
     
     .carrera-user{
         font-size: 45px;
+        line-height: 40px;
     }
 
     #user-pefil-div{
@@ -411,7 +413,7 @@ and (max-device-width : 667px) {
     .resume-footer{    
         margin: 0;               
         width: 100%;
-        
+        height: 150px;
     }
 
     .item-valores {                        
@@ -429,30 +431,31 @@ and (max-device-width : 667px) {
     }
 
     .resume-footer p{
-        font-size: 40px;
+        font-size: 40px;       
     }
     
 
     .navbar-toggler-icon{
-        height: 2.7em;
-        width: 2.7em;
+        height: 3.7em;
+        width: 3.7em;
     }
 
     .navbar-brand {        
-        font-size: 2.25rem;        
-    }
+        font-size: 3.25rem;        
+    }    
 
-    .nav-link{
-        font-size: 1.5em;
+    .nav-link {
+        font-size: 2.5em;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
     }
 
     .vidg-lenguaje-div{
-        width: 170px;
-    height: 60px;
+        width: 250px;
+        height: 80px;
     }
 
     .img-lenguaje{
-        width: 45px;
+        width: 70px;
     }
 
   }

@@ -40,7 +40,7 @@
         
         for (let index = 0; index < this.options.dataSource.length; index++) {
             
-            let $prodElement = $('<div  class="card vdg-Tarjeta">\
+            let $prodElement = $('<div id='+this.options.dataSource[index]["id"]+' class="card vdg-Tarjeta">\
                                  </div>').appendTo($(this.element));
 
             $prodElement.data(
@@ -48,23 +48,27 @@
                 {
                     'id':this.options.dataSource[index]['id'],
                     'titulo':this.options.dataSource[index]['titulo'],
-                    'descripcion':this.options.dataSource[index]['descripcion'],
+                    'descripcion':this.options.dataSource[index]['descripcion'].spanish,
                         
                 }
             ).append('<img src="'+this.options.dataSource[index]['img']+'"\
                           class="img-responsive">\
                           <h4>'+this.options.dataSource[index]['titulo']+'</h4>\
-                          <p>'+this.options.dataSource[index]['descripcion']+'</p>\
+                          <p>'+this.options.dataSource[index]['descripcion'].spanish+'</p>\
                           '); 
             
             if(this.options.dataSource[index]['link']){
                 $prodElement.append('<a href="'+this.options.dataSource[index]['link']+'" target="_blank">ver mas...</a>')
 
             }
-
-
-
                       
+        }
+    };
+
+    VDGTarjetas.prototype.traduce = function(lenguaje){
+
+        for (let index = 0; index < this.options.dataSource.length; index++) {
+            document.getElementById(this.options.dataSource[index]['id']).children[2].innerHTML = this.options.dataSource[index]['descripcion'][lenguaje];
         }
     };
    

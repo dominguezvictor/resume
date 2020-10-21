@@ -72,8 +72,13 @@ function configuraEventosLenguaje(){
             document.getElementById('vidg-valores-3').innerHTML = self.modulo.diccionario[lenguaje].valores.valores3;
             document.getElementById('vidg-valores-4').innerHTML = self.modulo.diccionario[lenguaje].valores.valores4;
             document.getElementById('vidg-librariesframeworks').innerHTML = self.modulo.diccionario[lenguaje].frameworks;
-            document.getElementById('user-perfil').innerHTML = self.modulo.diccionario[lenguaje].acerca;
+            document.getElementById('user-perfil').innerHTML = self.modulo.diccionario[lenguaje].acerca;            
             modulo.lenguaje = lenguaje;
+
+            let vdgTarjetas = $('#PanelProyectos').data('VDGTarjetas');
+            if (vdgTarjetas) {
+                vdgTarjetas.traduce(lenguaje);
+            }
         }
     }
 
@@ -111,7 +116,10 @@ function construyePanelProyectos() {
         id: '001',
         img: 'img/kof.png',
         titulo: 'The king of fighters',
-        descripcion: 'Página que recopila información de las mejores entregas del juego de arcade the king of fighters',
+        descripcion: {
+            english:'Web Page that collects information about the best of the arcade game the king of fighters',
+            spanish:'Página que recopila información de las mejores entregas del juego de arcade the king of fighters'
+        }, 
         link:'kof.html'
     }];
 
