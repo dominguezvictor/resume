@@ -120,7 +120,11 @@ function construyePanelProyectos() {
             english:'Web Page that collects information about the best of the arcade game the king of fighters',
             spanish:'Página que recopila información de las mejores entregas del juego de arcade the king of fighters'
         }, 
-        link:'kof.html'
+        link:{
+                page:'kof.html',
+                english:'See more...',
+                spanish:'Ver mas..'
+             }
     }];
 
     let vdgTarjetas = $('#PanelProyectos').data('VDGTarjetas');

@@ -58,7 +58,7 @@
                           '); 
             
             if(this.options.dataSource[index]['link']){
-                $prodElement.append('<a href="'+this.options.dataSource[index]['link']+'" target="_blank">ver mas...</a>')
+                $prodElement.append('<a href="'+this.options.dataSource[index]['link']['page']+'" target="_blank">ver mas...</a>')
 
             }
                       
@@ -69,6 +69,9 @@
 
         for (let index = 0; index < this.options.dataSource.length; index++) {
             document.getElementById(this.options.dataSource[index]['id']).children[2].innerHTML = this.options.dataSource[index]['descripcion'][lenguaje];
+            if(document.getElementById(this.options.dataSource[index]['id']).children[3]){
+                document.getElementById(this.options.dataSource[index]['id']).children[3].innerHTML = this.options.dataSource[index]['link'][lenguaje];
+            }
         }
     };
    
