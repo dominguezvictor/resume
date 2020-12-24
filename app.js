@@ -54,7 +54,6 @@ function construccionInicial(){
     .construyePanelProyectos()
     //.configuraEventoDarkMode()
     .configuraEventosLenguaje();
-
     //ocultarMenuAlScroll();
 }
 
@@ -85,6 +84,40 @@ function configuraEventosLenguaje(){
     $(".vidg-lenguaje-div :input").change(function() {        
         cambiaLenguaje(this.dataset.lenguaje); // points to the clicked input button
     });
+
+    $(".vidg-dark-switch :input").change(function (e) {
+        const imgPerfil = document.getElementById('img-perfil');
+        if (this.checked) {
+            agregaClasesCSSDarkMode();
+            imgPerfil.src = 'img/darth.jpg';
+            setTimeout(() => {
+                imgPerfil.src = 'img/vik2.jpeg';
+            imgPerfil.src = 'img/vik2.jpeg';}, 5000);
+        } else {
+            imgPerfil.src = 'img/vik2.jpeg';
+            remueveClasesCSSDarkMode();
+        }
+
+    });
+
+    
+}
+
+function agregaClasesCSSDarkMode(){
+    let body = document.body;
+    let panels = document.querySelectorAll('.darkeable-panel');
+        
+    body.classList.add('dark-theme');
+
+    panels.forEach(function(elemento){
+        elemento.classList.add('dark-panel');
+    });
+}
+
+function remueveClasesCSSDarkMode(){
+    let body = document.body;
+    
+    body.classList.remove('dark-theme');
 }
 
 function configuraEventoDarkMode(){

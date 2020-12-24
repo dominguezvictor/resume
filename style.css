@@ -1,5 +1,5 @@
 
-html, body{    
+body{    
     width: 100%;
     font-family: 'Poppins', sans-serif;
     background: rgb(252, 231, 231);
@@ -61,8 +61,7 @@ html, body{
 #img-perfil{
     width: 180px;    
     overflow: hidden;    
-    border-radius: 50%;       
-
+    border-radius: 50%;
 }
 
 #contenedor-img-perfil{    
@@ -179,7 +178,7 @@ html, body{
     height: 60px;
 }
 
-.theme--dark {
+.theme-dark {
     background-color: #222;
     color: #d8d8d8; 
 }
@@ -303,6 +302,39 @@ div.circle-valores-4:hover{
     width: 20px;
 }
 
+
+/*Dark mode*/
+
+body.dark-theme {
+    /*background: #272020;*/
+    background: #080808;
+}
+
+body.dark-theme .dark-panel{
+    background: #272020!important;
+    color: #eee!important;
+}
+
+body.dark-theme .dark-main-title{
+    color:#d9d9d9!important;
+}
+
+body.dark-theme .dark-pills{
+    background-color:#3e2d2d;
+}
+
+body.dark-theme .dark-circle{
+    background-color:#3e2d2d!important;
+    border: 0px!important;
+}
+
+body.dark-theme .contenedor-titulo{
+    border-bottom: 1px solid #343638; 
+} 
+
+body.dark-theme .dark-icon{
+    color:#198cd2;
+}
 /*Inician  los media querys*/
 @media only screen 
 and (min-device-width : 320px) 
