@@ -88,11 +88,12 @@ function configuraEventosLenguaje(){
     $(".vidg-dark-switch :input").change(function (e) {
         const imgPerfil = document.getElementById('img-perfil');
         if (this.checked) {
+            $('.collapse').collapse('toggle');
             agregaClasesCSSDarkMode();
             imgPerfil.src = 'img/darth.jpg';
             setTimeout(() => {
                 imgPerfil.src = 'img/vik2.jpeg';
-            imgPerfil.src = 'img/vik2.jpeg';}, 5000);
+            imgPerfil.src = 'img/vik2.jpeg';}, 9000);
         } else {
             imgPerfil.src = 'img/vik2.jpeg';
             remueveClasesCSSDarkMode();
