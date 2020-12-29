@@ -8,3 +8,35 @@ $tituloColor:green;
 .contacto-titulo-contenedor {
     text-align: $posicion;
 }
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 667px) {
+.custom-switch.custom-switch-lg {
+    padding-bottom: 2rem;
+    padding-left: 2.25rem;
+    padding-top: 1rem;
+  
+    & .custom-control-label {
+        padding-left: 5.75rem;
+        padding-top: 0rem;
+        font-size: 3rem;
+  
+      &::before {
+        border-radius: 2rem;
+        height: 3.5rem;
+        width: 6.5rem;
+      }
+  
+      &::after {
+              border-radius: 2rem;
+        height: calc(3.5rem - 5px);
+        width: calc(2.5rem - -8px);
+      }
+    }
+      
+      .custom-control-input:checked ~ .custom-control-label::after{
+    transform: translateX(3.3rem);
+      }
+  }
+}
