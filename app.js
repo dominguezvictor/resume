@@ -159,6 +159,19 @@ function construyePanelProyectos() {
                 english:'See more...',
                 spanish:'Ver mas..'
              }
+    },{
+        id: '002',
+        img: 'img/NetFlix.png',
+        titulo: 'Netflix',
+        descripcion: {
+            english:'React-Redux Netflix principal page catalogue',
+            spanish:'Catálogo principal de Netflix creado con React y Redux'
+        }, 
+        link:{
+                page:'https://netflix-clone-b7274.web.app/',
+                english:'See more...',
+                spanish:'Ver mas..'
+             }
     }];
 
     let vdgTarjetas = $('#PanelProyectos').data('VDGTarjetas');
