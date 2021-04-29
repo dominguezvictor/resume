@@ -161,7 +161,7 @@ function construyePanelProyectos() {
              }
     },{
         id: '002',
-        img: 'img/NetFlix.png',
+        img: 'img/Netflix.png',
         titulo: 'Netflix',
         descripcion: {
             english:'React-Redux Netflix principal page catalogue',
